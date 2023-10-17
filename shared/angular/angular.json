@@ -3,5 +3,41 @@
   "version": 1,
   "newProjectRoot": "libs",
   "projects": {
+    "@hiro/base-component-ant": {
+      "projectType": "library",
+      "root": "libs/hiro/base-component-ant",
+      "sourceRoot": "libs/hiro/base-component-ant/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "libs/hiro/base-component-ant/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/hiro/base-component-ant/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/hiro/base-component-ant/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "libs/hiro/base-component-ant/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
