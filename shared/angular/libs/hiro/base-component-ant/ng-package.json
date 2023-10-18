@@ -3,5 +3,6 @@
   "dest": "../../../dist/hiro/base-component-ant",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "allowedNonPeerDependencies": ["@ant-design/icons-angular", "ng-zorro-antd"]
 }

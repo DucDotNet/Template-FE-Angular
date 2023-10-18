@@ -28,9 +28,19 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "libs/hiro/base-component-ant/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "libs/hiro/base-component-ant/.storybook",
+            "browserTarget": "@hiro/base-component-ant:build",
+            "compodoc": false,
+            "port": 9001,
+            "assets": [],
+            "styles": [
+              "libs/hiro/base-component-ant/node_modules/ng-zorro-antd/src/ng-zorro-antd.css"
             ]
           }
         }
