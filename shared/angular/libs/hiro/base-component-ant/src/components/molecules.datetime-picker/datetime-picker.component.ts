@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NzI18nService, en_US } from 'ng-zorro-antd/i18n';
 
 @Component({
   selector: 'vsvn-datetime-picker',
@@ -6,9 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./datetime-picker.component.scss'],
 })
 export default class DatetimePickerComponent implements OnInit {
-  @Input() date: Date = new Date();
+  date: Date = new Date();
+  isEnglish = true;
 
-  constructor() {}
+  constructor(private i18n: NzI18nService) {
+    this.i18n.setLocale(en_US);
+  }
 
   onChange(result: any): void {
     console.log('onChange: ', result);
