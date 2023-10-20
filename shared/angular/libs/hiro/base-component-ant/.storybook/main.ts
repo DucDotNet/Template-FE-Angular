@@ -18,5 +18,6 @@ const config: StorybookConfig = {
   webpackFinal: async (config) => {
     return config;
   },
+  staticDirs: ['../../src/assets'],
 };
 export default config;

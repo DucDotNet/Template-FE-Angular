@@ -2,11 +2,17 @@
 {
   "extends": "../../../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@base-component-ant-src/*": ["./src/*"],
+      "@base-component-ant-env/*": ["./envs/*"]
+    },
     "outDir": "../../../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
     "types": []
   },
+  "include": ["**/*.ts"],
   "exclude": ["**/*.spec.ts"]
 }

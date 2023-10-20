@@ -1,4 +1,5 @@
 # Template-Angular
+
 This is template for angular
 
 ## 🔧 Technologies
@@ -8,3 +9,5 @@ This is template for angular
 ## 👊 Requirements
 
 ## 🚀 Getting started
+
+## 🤬 Errors
