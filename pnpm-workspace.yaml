@@ -1,7 +1,7 @@
 packages:
   # all apps in direct subdirs of apps/
-  - "apps/**/*"
+  - 'src/apps/**/*'
   # all libs in direct subdirs of shared/
-  - "shared/**/*"
+  - 'src/shared/**/*'
   # exclude packages that are inside test directories
-  - "!**/test/**"
+  - '!**/test/**'

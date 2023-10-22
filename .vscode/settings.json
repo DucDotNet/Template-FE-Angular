@@ -4,9 +4,11 @@
   },
   "search.exclude": {
     "**/node_modules": true,
-    // Avoid polluting search results with lockfile content
     "pnpm-lock.yaml": true
   },
+  // Ensure VSCode uses pnpm instead of npm
+  "npm.packageManager": "pnpm",
+  // Editor format mode
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
