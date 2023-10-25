@@ -12,9 +12,6 @@
     "target": "ES2022",
     "module": "es2020",
     "lib": ["es2018", "dom"],
-    "paths": {
-      "shared-lib": ["src/shared/angular/libs/hiro/public-api.ts"]
-    },
     "useDefineForClassFields": false
   }
 }

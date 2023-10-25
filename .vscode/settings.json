@@ -1,14 +1,20 @@
 {
+  // VSCode theme
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#036e15",
+    "statusBar.foreground": "#fafafa"
+  },
+  // Ensure VSCode uses pnpm instead of npm
+  "npm.packageManager": "pnpm",
+  // Editor format mode
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Exclude folders
   "files.exclude": {
     "**/node_modules": false
   },
   "search.exclude": {
     "**/node_modules": true,
     "pnpm-lock.yaml": true
-  },
-  // Ensure VSCode uses pnpm instead of npm
-  "npm.packageManager": "pnpm",
-  // Editor format mode
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

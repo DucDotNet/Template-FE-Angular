@@ -6,7 +6,7 @@ const {
 module.exports = withModuleFederationPlugin({
   name: 'appAngularRemote',
 
-  //filename: 'remoteEntry.js',
+  filename: 'remoteEntry.js',
 
   exposes: {
     './Module': './src/flights/flights.module.ts',

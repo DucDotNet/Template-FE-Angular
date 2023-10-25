@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { HomeComponent } from '../home/home.component';
+//import { Base } from '@hiro/base-components-ant-design';
 
 @NgModule({
   imports: [
