@@ -1,6 +1,6 @@
 # Template-Angular
 
-This is template for angular
+This is template for angular application
 
 ## 🔧 Technologies
 
